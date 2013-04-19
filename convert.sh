@@ -12,5 +12,5 @@ do
     BASE="${FN%.[^.]*}"
     EXT="${FN:${#BASE} + 1}"
     echo converting $DIR$FN$EXT to $OUTDIR$BASE.icls ...
-	python colorSchemeTool.py $FILE $OUTDIR$BASE.icls >> ./colorSchemeTool.log
+	python colorSchemeTool.py "$FILE" "$OUTDIR$BASE.icls" >> ./colorSchemeTool.log
 done
